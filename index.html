@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal portfolio website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/5c5af5ac5a.js" crossorigin="anonymous"></script>
+</head>   
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="logo1.jpg" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#project">Project</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Hello, my name is</p>
+            <h1>Harsh Jinagal And I'm a<br><span>FRONTEND DEVELOPER</span></h1>
+        </div>
+    </div>
+</div>
+<!------------------------------------------------------------------------------------about---------------------------------------------------------------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="profile.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1><br>
+                <p>Hello, I’m Harsh Jinagal, a B.Tech graduate in Computer Science Engineering from Inderprastha Engineering College. 
+                    I specialize as a frontend developer, where I focus on creating intuitive and dynamic user interfaces. 
+                    My education has provided me with a solid technical foundation, and I continually strive to enhance my skills in web development. 
+                    Outside of work, I’m passionate about traveling and exploring new cultures, as well as playing football, which keeps me active and engaged.
+                     I’m always eager to connect with like-minded professionals and explore new opportunities in the tech industry.</p><br>
+                     <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('Skills')"> Skills</p>
+                        <p class="tab-links" onclick="opentab('Experience')"> Experience</p>
+                        <p class="tab-links" onclick="opentab('Education')"> Education</p>
+                     </div>
+                     <div class="tab-contents active-tab" id="Skills">
+                        <ul>
+                            <li><span>LANGUAGES</span><br>C, PYTHON, HTML, CSS, JAVASCRIPT</li>
+                            <li><span>DATABASE</span><br>MYSQL, POWER BI, EXCEL, DATA VISUALIZATION</li>
+                            <li><span>TOOLS</span><br>VSCODE, GITHUB</li>
+                        </ul>
+                     </div>
+                     <div class="tab-contents" id="Experience">
+                        <ul>
+                            <li><span>Jul 2024-current</span><br>Power BI Intern | COGNIFZ TECHNOLOGIES</li>
+                            <li><span>Aug 2023 - Sep 2023</span><br>Web developer Intern | OASIS INFOBYTE</li>
+                            <li><span>Jul 2023- Jul 2023</span><br>Python developer Intern | INTERNPE</li>
+                        </ul>
+                     </div>
+                     <div class="tab-contents " id="Education">
+                        <ul>
+                            <li><span>2021-current</span><br>INDERPRASTHA ENGINEERING COLLEGE</li>
+                            <li><span>2012-2021</span><br>VIDYA BHARATI SACHOOL</li>
+                        </ul>
+                     </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!---------------------------------------------------------------------------------services------------------------------------------------------------------->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fas fa-code"></i>
+                <h2>Web design</h2>
+                <p>My education has provided me with a solid technical foundation, and I continually strive to enhance my skills in web development.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop"></i>
+                <h2>ui/ux design</h2>
+                <p>My education has provided me with a solid technical foundation, and I continually strive to enhance my skills in web development.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store"></i>
+                <h2>app design</h2>
+                <p>My education has provided me with a solid technical foundation, and I continually strive to enhance my skills in web development.</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!---------------------------------------------------------------------------project---------------------------------------------------------->
+<div id="project">
+    <div class="container">
+        <h1 class="sub-title">My project</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="project-1.png">
+                <div class="layer">
+                    <h3>AMAZON CLONE</h3>
+                    <p>Designed an amazon clone website using HTML and CSS.</p>
+                    <a href="https://github.com/Harsh-jinagal/amazon-clone"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="project-2.png">
+                <div class="layer">
+                    <h3>ECOMMERCE SALES DASHBOARD</h3>
+                    <p>Created interactive dashboard to track and analyze online sales data using Power Bi.</p>
+                    <a href="https://github.com/Harsh-jinagal/ecommerce-sales-dashboard"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="project-3.png">
+                <div class="layer">
+                    <h3>MY PORTFOLIO</h3>
+                    <p>Designed my portfolio website using HTML, CSS and JAVASCRIPT.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+<!------------------------------------------------------------------contact------------------------------------------------------------>
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>jinagalharsh@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i>9319832003</p>
+                <div class="social-icons">
+                    <a href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/harsh-jinagal/"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="HARSH RESUME.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="name" placeholder="your name" required>
+                    <input type="email" name="email" placeholder="your email" required>
+                    <textarea name="message" rows="6" placeholder="your message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Created BY HARSH JINAGAL © 2024 ALL RIGHT RESERVED <i class="fa-solid fa-heart"></i></p>
+    </div>
+</div>
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+
+</script>
+
+</body>
+</html>
